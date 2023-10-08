@@ -1,0 +1,156 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 316
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Rectangle1: TRectangle
+    Position.X = 8.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 624.000000000000000000
+    Size.Height = 145.000000000000000000
+    Size.PlatformDefault = False
+    object Label1: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 8.000000000000000000
+      Text = 'ScreenshotLayer'
+      TabOrder = 0
+    end
+    object Edit1: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 4
+      Text = 'http://apilayer.com'
+      Position.X = 56.000000000000000000
+      Position.Y = 33.000000000000000000
+      Size.Width = 217.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = 'URL'
+    end
+    object Edit2: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 3
+      Position.X = 352.000000000000000000
+      Position.Y = 33.000000000000000000
+      Size.Width = 217.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = 'Viewport'
+    end
+    object Edit3: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 2
+      Text = '1'
+      Position.X = 56.000000000000000000
+      Position.Y = 81.000000000000000000
+      Size.Width = 217.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = 'Fullpage'
+    end
+    object Edit4: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 1
+      Position.X = 352.000000000000000000
+      Position.Y = 81.000000000000000000
+      Size.Width = 217.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = 'Access key'
+    end
+    object Button1: TButton
+      Position.X = 224.000000000000000000
+      Position.Y = 115.000000000000000000
+      Size.Width = 177.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 5
+      Text = 'Take a screenshot'
+      OnClick = Button1Click
+    end
+    object ShadowEffect2: TShadowEffect
+      Distance = 3.000000000000000000
+      Direction = 45.000000000000000000
+      Softness = 0.300000011920929000
+      Opacity = 0.600000023841857900
+      ShadowColor = claBlack
+    end
+  end
+  object Rectangle2: TRectangle
+    Position.X = 8.000000000000000000
+    Position.Y = 161.000000000000000000
+    Size.Width = 624.000000000000000000
+    Size.Height = 145.000000000000000000
+    Size.PlatformDefault = False
+    object Label2: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 8.000000000000000000
+      Text = 'PDFLayer'
+      TabOrder = 0
+    end
+    object Edit5: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 3
+      Text = 'http://example.com/document.html'
+      Position.X = 56.000000000000000000
+      Position.Y = 33.000000000000000000
+      Size.Width = 217.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = 'Document URL'
+    end
+    object Edit6: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 2
+      Position.X = 352.000000000000000000
+      Position.Y = 33.000000000000000000
+      Size.Width = 217.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = 'Access key'
+    end
+    object Edit7: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 1
+      Position.X = 56.000000000000000000
+      Position.Y = 81.000000000000000000
+      Size.Width = 217.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = 'Document HTML'
+    end
+    object Button2: TButton
+      Position.X = 224.000000000000000000
+      Position.Y = 115.000000000000000000
+      Size.Width = 177.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+      Text = 'Generate PDF'
+      OnClick = Button2Click
+    end
+    object ShadowEffect1: TShadowEffect
+      Distance = 3.000000000000000000
+      Direction = 45.000000000000000000
+      Softness = 0.300000011920929000
+      Opacity = 0.600000023841857900
+      ShadowColor = claBlack
+    end
+  end
+  object NetHTTPClient1: TNetHTTPClient
+    UserAgent = 'Embarcadero URI Client/1.0'
+    Left = 560
+    Top = 232
+  end
+  object NetHTTPRequest1: TNetHTTPRequest
+    ConnectionTimeout = 0
+    SendTimeout = 0
+    ResponseTimeout = 0
+    Left = 456
+    Top = 232
+  end
+end
